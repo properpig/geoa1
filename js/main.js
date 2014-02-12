@@ -198,7 +198,7 @@ function setMap() {
   $.getJSON('data/sfpd_districts.geojson', function(data) {
     mapLayers.sfpdDistrictsLayer = new L.geoJson(data, {
       style: {
-          weight: 1,
+          weight: 2,
           opacity: 1,
           color: '#b7dcff',
           dashArray: '3',
@@ -223,7 +223,7 @@ function setMap() {
             },
             mouseout: function(e) {
               layer.setStyle({
-                  weight: 1,
+                  weight: 2,
                   color: '#b7dcff',
                   dashArray: '3',
                   fillOpacity: 0
@@ -242,7 +242,7 @@ function setMap() {
   $.getJSON('data/zipcodes.geojson', function(data) {
     mapLayers.zipCodeBoundariesLayer = new L.geoJson(data, {
       style: {
-          weight: 1,
+          weight: 2,
           opacity: 1,
           color: '#ffeea9',
           dashArray: '3',
@@ -266,7 +266,7 @@ function setMap() {
             },
             mouseout: function(e) {
               layer.setStyle({
-                  weight: 1,
+                  weight: 2,
                   color: '#ffeea9',
                   dashArray: '3',
                   fillOpacity: 0
@@ -511,7 +511,7 @@ function setMap() {
 
     mapLayers.neighborhoodLayer = new L.TopoJSON(topoJsonData, {
       style: {
-          weight: 1,
+          weight: 2,
           opacity: 1,
           color: '#c6ffb7',
           dashArray: '3',
@@ -536,7 +536,7 @@ function setMap() {
             },
             mouseout: function(e) {
               layer.setStyle({
-                  weight: 1,
+                  weight: 2,
                   color: '#c6ffb7',
                   dashArray: '3',
                   fillOpacity: 0
