@@ -205,6 +205,7 @@ function setMap() {
           fillOpacity: 0
       },
       onEachFeature: function(feature, layer) {
+        layer.bindPopup(feature.properties.DISTRICT + " District");
         layer.on({
             mouseover: function(e) {
               var layer = e.target;
@@ -517,6 +518,7 @@ function setMap() {
           fillOpacity: 0
       },
       onEachFeature: function(feature, layer) {
+        layer.bindPopup(feature.properties.neighborho + " Neighborhood");
         layer.on({
             mouseover: function(e) {
               var layer = e.target;
