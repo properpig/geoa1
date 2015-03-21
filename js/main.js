@@ -27,7 +27,7 @@ function setMap() {
 
   //add the tile layer to the map
   mapLayers.baseLayer = L.tileLayer(
-    'http://{s}.tile.cloudmade.com/8ee2a50541944fb9bcedded5165f09d9/77922/256/{z}/{x}/{y}.png',
+    'https://{s}.tiles.mapbox.com/v4/mapbox.outdoors/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q',
     {
 		  attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>'
 	 }).addTo(map);
