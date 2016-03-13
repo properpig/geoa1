@@ -27,9 +27,8 @@ function setMap() {
 
   //add the tile layer to the map
   mapLayers.baseLayer = L.tileLayer(
-    'https://{s}.tiles.mapbox.com/v4/mapbox.outdoors/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q',
-    {
-		  attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>'
+    'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+		  attribution: 'Map tiles by <a href="http://cartodb.com/attributions">CartoDB</a>, under CC BY 3.0. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under ODbL'
 	 }).addTo(map);
 
   mapLayers.baseLayer.name = "Base Layer";
